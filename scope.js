@@ -1,0 +1,23 @@
+var bonus = 5000;
+var employee = false;
+
+function calculateSalary() {
+    var Salary = 40000;
+    var Permanent = true;
+    var totalSalary;
+
+    if (Permanent) {
+        totalSalary = Salary + bonus;
+    } else {
+        totalSalary = Salary + 0;
+    }
+
+    console.log("Inside function -> Permanent?", Permanent);
+    console.log("Inside function -> Total Salary ₹" + totalSalary);
+}
+
+console.log("Global -> Permanent?", employee);
+
+calculateSalary();
+
+console.log("Global after function -> Permanent?", employee);
